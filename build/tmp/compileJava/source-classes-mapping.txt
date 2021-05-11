@@ -1,0 +1,4 @@
+com/kodilla/mygame/MyGame.java
+ com.kodilla.mygame.MyGame
+com/kodilla/mygame/Player.java
+ com.kodilla.mygame.Player
