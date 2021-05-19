@@ -1,4 +1,10 @@
-com/kodilla/mygame/MyGame.java
- com.kodilla.mygame.MyGame
+com/kodilla/mygame/Pawn.java
+ com.kodilla.mygame.Pawn
+com/kodilla/mygame/MovingProcessor.java
+ com.kodilla.mygame.MovingProcessor
 com/kodilla/mygame/Player.java
  com.kodilla.mygame.Player
+com/kodilla/mygame/MyGame.java
+ com.kodilla.mygame.MyGame
+com/kodilla/mygame/Messages.java
+ com.kodilla.mygame.Messages
