@@ -5,7 +5,6 @@ import javafx.application.Platform;
 import javafx.geometry.Pos;
 import javafx.scene.Group;
 import javafx.scene.Scene;
-import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
@@ -19,7 +18,6 @@ import javax.swing.*;
 import java.util.*;
 
 public class MyGame extends Application {
-    int playersCount;
 
     MovingProcessor movingProc = new MovingProcessor();
     Messages message = new Messages();
@@ -81,7 +79,7 @@ public class MyGame extends Application {
     }
 
     @Override
-    public void start(Stage primaryStage) throws Exception {
+    public void start(Stage primaryStage) {
 
         try {
             Scene scene = new Scene(root, 1000, 800, Color.BROWN);
@@ -150,7 +148,6 @@ public class MyGame extends Application {
         message.gameIntroduction(player1,lblPlayer1);
         newGame();
     }
-
 
     public void drawingGameBoard() {
 
