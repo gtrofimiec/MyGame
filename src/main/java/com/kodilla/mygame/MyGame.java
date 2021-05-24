@@ -10,18 +10,17 @@ import java.util.*;
 
 public class MyGame extends Application {
 
-    PlayerFactory playerFactory = new PlayerFactory();
-    GameBoard gameBoard = new GameBoard();
-    MovingProcessor movingProc = new MovingProcessor();
-    LabelsCreator labelsCreator = new LabelsCreator();
-    ButtonsCreator buttonsCreator = new ButtonsCreator();
-    Messages message = new Messages();
-    Terminal terminal = new Terminal();
-    PrimaryStageStyler pSS = new PrimaryStageStyler();
-    Dice dices = new Dice();
-
+    public static PlayerFactory playerFactory = new PlayerFactory();
+    public static MovingProcessor movingProc = new MovingProcessor();
+    public static LabelsCreator labelsCreator = new LabelsCreator();
+    public static Messages message = new Messages();
+    public static Terminal terminal = new Terminal();
     public static List<Player> gamePlayers = new ArrayList<>();
     public static Group root = new Group();
+    GameBoard gameBoard = new GameBoard();
+    ButtonsCreator buttonsCreator = new ButtonsCreator();
+    PrimaryStageStyler pSS = new PrimaryStageStyler();
+    Dice dices = new Dice();
 
     public static void main(String[] args) {
         launch(args);
@@ -52,7 +51,7 @@ public class MyGame extends Application {
         newGame();
     }
 
-    public void newGame() {
+    public static void newGame() {
 
         message.howManyPlayers();
         movingProc.gameWon = false;

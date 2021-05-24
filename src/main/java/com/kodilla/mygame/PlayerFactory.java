@@ -16,6 +16,7 @@ public class PlayerFactory {
     public Player player;
 
     public void createAllPlayers() {
+        allPlayers.clear();
         for(int i=1; i<=4; i++) {
             List<Rectangle> startPoolsList = new ArrayList<>();
             List<ImageView> pawnsImageViewList = new ArrayList<>();
@@ -30,6 +31,7 @@ public class PlayerFactory {
     }
 
     public void createGamePlayers() {
+        gamePlayers.clear();
         for(int i=0; i<=Messages.playersCount; i++) {
             gamePlayers.add(allPlayers.get(i));
         }

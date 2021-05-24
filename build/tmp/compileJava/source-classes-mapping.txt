@@ -10,14 +10,14 @@ com/kodilla/mygame/Player.java
  com.kodilla.mygame.Player
 com/kodilla/mygame/Dice.java
  com.kodilla.mygame.Dice
-com/kodilla/mygame/GameBoard.java
- com.kodilla.mygame.GameBoard
 com/kodilla/mygame/MyGame.java
  com.kodilla.mygame.MyGame
 com/kodilla/mygame/DrawingPawnMove.java
  com.kodilla.mygame.DrawingPawnMove
 com/kodilla/mygame/ButtonsCreator.java
  com.kodilla.mygame.ButtonsCreator
+com/kodilla/mygame/GameBoard.java
+ com.kodilla.mygame.GameBoard
 com/kodilla/mygame/LabelsCreator.java
  com.kodilla.mygame.LabelsCreator
 com/kodilla/mygame/Messages.java

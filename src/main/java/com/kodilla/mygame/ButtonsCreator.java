@@ -14,12 +14,12 @@ public class ButtonsCreator {
     public void createThrowDiceButton() {
         setLayout(btnThrowDice,800,500);
         btnThrowDice.setOnAction(e -> drawingPawnMove.pawnsMove());
-        myGame.root.getChildren().add(btnThrowDice);
+        MyGame.root.getChildren().add(btnThrowDice);
     }
 
     public void createNewGameButton() {
         setLayout(btnNewGame,800,570);
-        btnNewGame.setOnAction(e-> myGame.newGame());
+        btnNewGame.setOnAction(e-> MyGame.newGame());
         myGame.root.getChildren().add(btnNewGame);
     }
 

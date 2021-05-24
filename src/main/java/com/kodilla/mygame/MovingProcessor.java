@@ -7,13 +7,9 @@ public class MovingProcessor {
     boolean gameWon;
 
     public void pawnFirstMove(Pawn pawn) {
-//        if (diceResult == 6) {
             pawn.pawnActualPosition = pawn.getPlayer().playerStartPosition;
             pawn.diceCounter = 0;
             pawn.isFirstMove = false;
-//        } else {
-//            pawn.pawnActualPosition = -1;
-//        }
     }
 
     public void pawnLastMove(Pawn pawn) {

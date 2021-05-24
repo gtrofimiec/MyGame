@@ -6,7 +6,7 @@ import static com.kodilla.mygame.GameBoard.gamePools;
 import static com.kodilla.mygame.MyGame.gamePlayers;
 
 public class DrawingPawnMove {
-    MyGame myGame;
+
     MovingProcessor movingProc = new MovingProcessor();
     Messages message = new Messages();
     Terminal terminal = new Terminal();
@@ -30,10 +30,8 @@ public class DrawingPawnMove {
                     terminal.regMoveTerminal(pawn);
                 } else if (pawn.isFirstMove && pawn.diceCounter==0) {
                     terminal.regMoveTerminal(pawn);
-
                 } else if (pawn.diceCounter < 40) {
-                    pawn.diceCounter+= Dice.diceResult;
-
+                    pawn.diceCounter+=Dice.diceResult;
                     movingProc.pawnMove(pawn);
                     drawingPawnMove(pawn);
                     terminal.regMoveTerminal(pawn);
