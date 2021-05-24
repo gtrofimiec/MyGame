@@ -3,12 +3,13 @@ package com.kodilla.mygame;
 import javafx.scene.image.ImageView;
 
 public class Pawn {
+
     Player player;
-    ImageView imageView;
-    int pawnStartPosition;
-    int pawnActualPosition;
-    boolean isFirstMove;
-    boolean isReachedEnd;
+    public ImageView imageView;
+    public int pawnStartPosition;
+    public int pawnActualPosition;
+    public boolean isFirstMove;
+    public boolean isReachedEnd;
     int diceCounter;
 
     public Pawn (Player player, ImageView imageView, int pawnStartPosition) {
@@ -23,5 +24,10 @@ public class Pawn {
 
     public Player getPlayer() {
         return player;
+    }
+
+    @Override
+    public String toString() {
+        return "Pawn{" + "player=" + player + '}';
     }
 }
