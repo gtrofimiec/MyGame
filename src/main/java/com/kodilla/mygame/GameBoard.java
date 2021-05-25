@@ -11,7 +11,7 @@ import static com.kodilla.mygame.PlayerFactory.allPlayers;
 
 public class GameBoard {
 
-    public static List<Rectangle> gamePools = new ArrayList<>(); // lista pól planszy
+    public static List<Rectangle> gamePools = new ArrayList<>();
 
     public static int poleWidth = 60;
     public static int poleHeight = 60;
@@ -38,7 +38,7 @@ public class GameBoard {
             gamePools.get(i).setFill(Color.SANDYBROWN);
             root.getChildren().add(gamePools.get(i));
         }
-        gamePools.get(0).setFill(Color.DARKRED); // oznaczanie pól startowych graczy
+        gamePools.get(0).setFill(Color.DARKRED);
         gamePools.get(10).setFill(Color.DARKGREY);
         gamePools.get(20).setFill(Color.DARKGREEN);
         gamePools.get(30).setFill(Color.DARKBLUE);
@@ -46,7 +46,7 @@ public class GameBoard {
     }
 
     public void fillingStartPools() {
-        for (int i = 0; i <= 15; i++) { //dodawanie pól wyjściowych do roota
+        for (int i = 0; i <= 15; i++) {
             if (i <= 3) {
                 fillStartPool(0, i, Color.DARKRED);
             } else if (i > 3 && i <= 7) {
@@ -76,7 +76,7 @@ public class GameBoard {
         }
     }
 
-    public static void drawingStartPools(Player player, int x, int y) {
+    private static void drawingStartPools(Player player, int x, int y) {
        player.startPoolsList.add((new Rectangle(x, y, poleWidth, poleHeight)));
        player.startPoolsList.add((new Rectangle(x + 65, y, poleWidth, poleHeight)));
        player.startPoolsList.add((new Rectangle(x + 65, y + 65, poleWidth, poleHeight)));

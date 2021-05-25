@@ -37,7 +37,7 @@ public class PlayerFactory {
         }
     }
 
-    public void stylePlayer(int i) {
+    private void stylePlayer(int i) {
         playerPawnImage= new Image((this.getClass().getResource
                 ("/Pawn"+i+".png")).toString(),30,30,
                 false,false);

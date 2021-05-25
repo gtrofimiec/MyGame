@@ -19,7 +19,7 @@ public class MyGame extends Application {
     public static Group root = new Group();
     GameBoard gameBoard = new GameBoard();
     ButtonsCreator buttonsCreator = new ButtonsCreator();
-    PrimaryStageStyler pSS = new PrimaryStageStyler();
+    PrimaryStageStyler stageStyler = new PrimaryStageStyler();
     Dice dices = new Dice();
 
     public static void main(String[] args) {
@@ -41,7 +41,7 @@ public class MyGame extends Application {
             buttonsCreator.createExitGameButton();
 
             primaryStage.setScene(scene);
-            pSS.stageStyle(primaryStage);
+            stageStyler.stageStyle(primaryStage);
             primaryStage.show();
         } catch(Exception e) {
             e.printStackTrace();
@@ -53,8 +53,8 @@ public class MyGame extends Application {
 
     public static void newGame() {
 
-        message.howManyPlayers();
         movingProc.gameWon = false;
+        message.howManyPlayers();
         playerFactory.createGamePlayers();
         labelsCreator.createPlayerNameLabels();
         GameBoard.placingPawnOnStartPools();

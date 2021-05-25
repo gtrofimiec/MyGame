@@ -10,19 +10,14 @@ public class Terminal {
     Dice dice;
     List<String> terminal = new ArrayList<>();
 
-
-    public void terminalProcessor(String tLine) {
+    public void terminalProc(String tLine) {
+        lblTerminal.setText("");
         if(terminal.size()<9) {
             terminal.add(tLine);
         } else {
             terminal.remove(0);
             terminal.add(tLine);
         }
-    }
-
-    public void terminalProc(String tLine) {
-        lblTerminal.setText("");
-        terminalProcessor(tLine);
         for(int i=0; i<= terminal.size()-1; i++) {
             lblTerminal.setText(lblTerminal.getText()+terminal.get(i)+"\n");
         }

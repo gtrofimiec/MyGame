@@ -46,7 +46,7 @@ public class DrawingPawnMove {
         }
     }
 
-    public void drawingPawnMove(Pawn pawn) {
+    private void drawingPawnMove(Pawn pawn) {
         pawn.getImageView().setX(gamePools.get(pawn.pawnActualPosition).getX());
         pawn.getImageView().setY(gamePools.get(pawn.pawnActualPosition).getY());
     }

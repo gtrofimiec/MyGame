@@ -15,13 +15,13 @@ public class Dice {
     public static ImageView diceImageView = new ImageView();
     public static int diceResult;
 
-    public Image dice = new Image((this.getClass().getResource("/dice.png")).toString(),80,80,false,false);
-    public Image dice1 = new Image((this.getClass().getResource("/dice1.png")).toString(),80,80,false,false);
-    public Image dice2 = new Image((this.getClass().getResource("/dice2.png")).toString(),80,80,false,false);
-    public Image dice3 = new Image((this.getClass().getResource("/dice3.png")).toString(),80,80,false,false);
-    public Image dice4 = new Image((this.getClass().getResource("/dice4.png")).toString(),80,80,false,false);
-    public Image dice5 = new Image((this.getClass().getResource("/dice5.png")).toString(),80,80,false,false);
-    public Image dice6 = new Image((this.getClass().getResource("/dice6.png")).toString(),80,80,false,false);
+    Image dice = new Image((this.getClass().getResource("/dice.png")).toString(),80,80,false,false);
+    Image dice1 = new Image((this.getClass().getResource("/dice1.png")).toString(),80,80,false,false);
+    Image dice2 = new Image((this.getClass().getResource("/dice2.png")).toString(),80,80,false,false);
+    Image dice3 = new Image((this.getClass().getResource("/dice3.png")).toString(),80,80,false,false);
+    Image dice4 = new Image((this.getClass().getResource("/dice4.png")).toString(),80,80,false,false);
+    Image dice5 = new Image((this.getClass().getResource("/dice5.png")).toString(),80,80,false,false);
+    Image dice6 = new Image((this.getClass().getResource("/dice6.png")).toString(),80,80,false,false);
 
     public void diceCreator() {
         // tworzenie listy obrazków kostek

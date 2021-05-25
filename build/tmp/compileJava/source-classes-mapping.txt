@@ -2,12 +2,6 @@ com/kodilla/mygame/MovingProcessor.java
  com.kodilla.mygame.MovingProcessor
 com/kodilla/mygame/Pawn.java
  com.kodilla.mygame.Pawn
-com/kodilla/mygame/Terminal.java
- com.kodilla.mygame.Terminal
-com/kodilla/mygame/PrimaryStageStyler.java
- com.kodilla.mygame.PrimaryStageStyler
-com/kodilla/mygame/Player.java
- com.kodilla.mygame.Player
 com/kodilla/mygame/Dice.java
  com.kodilla.mygame.Dice
 com/kodilla/mygame/MyGame.java
@@ -16,10 +10,16 @@ com/kodilla/mygame/DrawingPawnMove.java
  com.kodilla.mygame.DrawingPawnMove
 com/kodilla/mygame/ButtonsCreator.java
  com.kodilla.mygame.ButtonsCreator
+com/kodilla/mygame/Terminal.java
+ com.kodilla.mygame.Terminal
+com/kodilla/mygame/Player.java
+ com.kodilla.mygame.Player
 com/kodilla/mygame/GameBoard.java
  com.kodilla.mygame.GameBoard
 com/kodilla/mygame/LabelsCreator.java
  com.kodilla.mygame.LabelsCreator
+com/kodilla/mygame/PrimaryStageStyler.java
+ com.kodilla.mygame.PrimaryStageStyler
 com/kodilla/mygame/Messages.java
  com.kodilla.mygame.Messages
 com/kodilla/mygame/PlayerFactory.java
